@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+#gallery{
+  background-color: rgb(210, 245, 245);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gallery_list_item img{
+padding: 10px;
+width: 100%;
+}
+.gallery_list_item{
+    list-style: none;
+  width: 50%;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
