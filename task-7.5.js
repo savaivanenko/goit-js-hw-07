@@ -1,7 +1,9 @@
 const inputRef = document.querySelector('#name-input');
-console.log(inputRef);
+console.log(inputRef.value);
 const h1SpanRef = document.querySelector('#name-output');
 
-inputRef.addEventListener('change', foo =>{
-  h1SpanRef.textContent = foo.target.value;
+inputRef.addEventListener('input', foo =>{
+  console.log(foo);
+  foo.target.value !== ""? h1SpanRef.textContent = foo.target.value :
+    h1SpanRef.textContent = 'незнакомец';   
 })
